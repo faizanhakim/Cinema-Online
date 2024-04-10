@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background-color: #1F2937;
+  color: white;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.title {
+  font-size: x-large;
+  padding-left: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  opacity: 40%;
+
+}
+
+.footer-container footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.footer-container footer p {
+  color: #ccc;
+}
+
+.links {
+  margin-left: 5rem;
+  font-size: large;
+}
+
+.search-bar {
+  width: fit-content;
+  display: flex;
+  position: absolute;
+  margin-left: 63rem;
+}
+
+.search-bar input {
+  outline: none;
+  height: 2.2rem;
+  background-color: none;
+}
+
+.search-icon {
+  margin-left: 8px;
+  margin-bottom: 5px;
+}
+
+.login-button {
+  width: 65px;
+  height: 32px;
+  display: flex;
+  position: absolute;
+  margin-left: 83rem;
+  border-radius: 8%;
+  padding: 3px 10px;
+}
+
+.background-image {
+  position: fixed;
+  top: 20vh;
+  left: 35vh;
+  width: 65%;
+  height: 70%;
+  z-index: -1;
+  opacity: 8%;
+}
+
+.authentication-box {
+  width: 40rem;
+  height: 35rem;
+  margin-left: 435px;
+  margin-top: 70px;
+}
+
+
+.authentication-container {
+  width: 88%;
+  height: 90%;
+  margin-left: 39px;
+  margin-top: 14px;
+}
+
+.close-button {
+  left: 37.5rem;
+  bottom: -0.5rem;
+}
+
+.fadeIn-animation {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.fadeOut-animation {
+  animation: fadeOut 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+}
+
+.click-text {
+  cursor: pointer;
+}
+
+.form-transition {
+  transition: translate 1s ease-in-out 0s;
+}
