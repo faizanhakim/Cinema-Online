@@ -49,7 +49,7 @@ userSchema.statics.signup = async function (userName, email, password) {
 
     try {
         const user = await this.create(userDocument)
-        return user
+        return user.userName
     }
     catch {
         throw Error("Registeration failed")
@@ -77,7 +77,7 @@ userSchema.statics.login = async function (identification, password) {
     if (!match)
         throw Error("Incorrect Credentials")
 
-    return user
+    return { "userName": user.userName }
 }
 
 module.exports = mongoose.model("User", userSchema)

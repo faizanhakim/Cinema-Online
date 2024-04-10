@@ -1,0 +1,26 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+*.env
+
+# dependencies
+/cinema-online/node_modules
+/cinema-online-backend/node_modules
+/cinema-online/.pnp
+/cinema-online/.pnp.js
+
+# testing
+/cinema-online/coverage
+
+# production
+/cinema-online/build
+
+# misc
+/cinema-online/.DS_Store
+/cinema-online/.env.local
+/cinema-online/.env.development.local
+/cinema-online/.env.test.local
+/cinema-online/.env.production.local
+
+/cinema-online/npm-debug.log*
+/cinema-online/yarn-debug.log*
+/cinema-online/yarn-error.log*
